@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      uiCookies:Haus &mdash; Free Bootstrap Theme, Free Responsive Bootstrap
+      Website Template
+    </title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com" />
+    <meta
+      name="keywords"
+      content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles-merged.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-size: 100%;
+        vertical-align: baseline;
+      }
+
+      html {
+        line-height: 1;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      caption,
+      th,
+      td {
+        text-align: left;
+        font-weight: normal;
+        vertical-align: middle;
+      }
+
+      q,
+      blockquote {
+        quotes: none;
+      }
+      q:before,
+      q:after,
+      blockquote:before,
+      blockquote:after {
+        content: "";
+        content: none;
+      }
+
+      a img {
+        border: none;
+      }
+
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
+
+      /* Colors */
+      /* ---------------------------------------- */
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+        font-family: "Lato", "sans-serif";
+        font-weight: 400;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .info-text {
+        text-align: left;
+        width: 100%;
+      }
+
+      header,
+      form {
+        padding: 4em 10%;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      h2.heading {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+        color: #506982;
+        border-bottom: 1px solid #506982;
+        padding-bottom: 3px;
+        margin-bottom: 20px;
+      }
+
+      .controls {
+        text-align: left;
+        position: relative;
+      }
+      .controls input[type="text"],
+      .controls input[type="email"],
+      .controls input[type="number"],
+      .controls input[type="date"],
+      .controls input[type="tel"],
+      .controls textarea,
+      .controls button,
+      .controls select {
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #c6c6c6;
+        width: 100%;
+        margin-bottom: 18px;
+        color: #888;
+        font-family: "Lato", "sans-serif";
+        font-size: 16px;
+        font-weight: 300;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .controls input[type="text"]:focus,
+      .controls input[type="text"]:hover,
+      .controls input[type="email"]:focus,
+      .controls input[type="email"]:hover,
+      .controls input[type="number"]:focus,
+      .controls input[type="number"]:hover,
+      .controls input[type="date"]:focus,
+      .controls input[type="date"]:hover,
+      .controls input[type="tel"]:focus,
+      .controls input[type="tel"]:hover,
+      .controls textarea:focus,
+      .controls textarea:hover,
+      .controls button:focus,
+      .controls button:hover,
+      .controls select:focus,
+      .controls select:hover {
+        outline: none;
+        border-color: #9fb1c1;
+      }
+      .controls input[type="text"]:focus + label,
+      .controls input[type="text"]:hover + label,
+      .controls input[type="email"]:focus + label,
+      .controls input[type="email"]:hover + label,
+      .controls input[type="number"]:focus + label,
+      .controls input[type="number"]:hover + label,
+      .controls input[type="date"]:focus + label,
+      .controls input[type="date"]:hover + label,
+      .controls input[type="tel"]:focus + label,
+      .controls input[type="tel"]:hover + label,
+      .controls textarea:focus + label,
+      .controls textarea:hover + label,
+      .controls button:focus + label,
+      .controls button:hover + label,
+      .controls select:focus + label,
+      .controls select:hover + label {
+        color: #bdcc00;
+        cursor: text;
+      }
+      .controls .fa-sort {
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        color: #999;
+      }
+      .controls select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+      }
+      .controls label {
+        position: absolute;
+        left: 8px;
+        top: 12px;
+        width: 60%;
+        color: #999;
+        font-size: 16px;
+        display: inline-block;
+        padding: 4px 10px;
+        font-weight: 400;
+        background-color: rgba(255, 255, 255, 0);
+        -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+        -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+        -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+        transition: color 0.3s, top 0.3s, background-color 0.8s;
+        background-color: white;
+      }
+      .controls label.active {
+        top: -11px;
+        color: #555;
+        background-color: white;
+        width: auto;
+      }
+      .controls textarea {
+        resize: none;
+        height: 200px;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: #1b3d4d;
+        border: none;
+        color: #fff;
+        padding: 12px 0;
+        float: right;
+      }
+      button:hover {
+        background-color: #224c60;
+      }
+
+      .clear:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .grid {
+        background: white;
+      }
+      .grid:after {
+        /* Or @extend clearfix */
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding-right: 10px;
+      }
+      .grid [class*="col-"]:last-of-type {
+        padding-right: 0;
+      }
+
+      .col-2-3 {
+        width: 66.66%;
+      }
+
+      .col-1-3 {
+        width: 33.33%;
+      }
+
+      .col-1-2 {
+        width: 50%;
+      }
+
+      .col-1-4 {
+        width: 25%;
+      }
+
+      @media (max-width: 760px) {
+        .col-1-4-sm,
+        .col-1-3,
+        .col-2-3 {
+          width: 100%;
+        }
+
+        [class*="col-"] {
+          padding-right: 0px;
+        }
+      }
+      .col-1-8 {
+        width: 12.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- START: header -->
+
+    <div class="probootstrap-loader"></div>
+
+    <header role="banner" class="probootstrap-header">
+      <div class="container">
+        <a href="index.html" class="probootstrap-logo">Haus<span>.</span></a>
+
+        <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li class="active"><a href="agents.html">Agents</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+            <h5>Address</h5>
+            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+            <h5>Connect</h5>
+            <ul class="social-buttons">
+              <li>
+                <a href="#"><i class="icon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-facebook2"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-instagram2"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END: header -->
+    <section class="probootstrap-slider flexslider2 page-inner">
+      <div class="overlay"></div>
+      <div class="probootstrap-wrap-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="page-title probootstrap-animate">
+                <div class="probootstrap-breadcrumbs">
+                  <a href="#">Home</a><span>Payments</span>
+                </div>
+                <h1>Paymnets</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="slides">
+        <li style="background-image: url(img/slider_1.jpg)"></li>
+        <li style="background-image: url(img/slider_4.jpg)"></li>
+        <li style="background-image: url(img/slider_2.jpg)"></li>
+      </ul>
+    </section>
+    <!-- END: slider  -->
+
+    <section class="probootstrap-section probootstrap-section-lighter">
+      <link
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        rel="stylesheet"
+        id="bootstrap-css"
+      />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <style>
+        /*----------  libraries ---------- */
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+        @import url(https://fonts.googleapis.com/css?family=Work+Sans);
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font: inherit;
+          font-size: 100%;
+          vertical-align: baseline;
+        }
+
+        html {
+          line-height: 1;
+        }
+
+        ol,
+        ul {
+          list-style: none;
+        }
+
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+        }
+
+        caption,
+        th,
+        td {
+          text-align: left;
+          font-weight: normal;
+          vertical-align: middle;
+        }
+
+        q,
+        blockquote {
+          quotes: none;
+        }
+        q:before,
+        q:after,
+        blockquote:before,
+        blockquote:after {
+          content: "";
+          content: none;
+        }
+
+        a img {
+          border: none;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+          display: block;
+        }
+
+        /*----------  style ----------*/
+        * {
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizeLegibility;
+        }
+
+        body {
+          background-color: #b3e5fc;
+        }
+
+        .wrapper {
+          width: 611px;
+          height: 400px;
+          margin: 80px auto 0;
+        }
+        .wrapper .container {
+          float: right;
+          width: 600px;
+          height: 400px;
+          background-color: #fff;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+        .wrapper .container .part {
+          float: left;
+          height: 100%;
+        }
+        .wrapper .container .part.card-details {
+          padding: 48px 40px 0;
+          width: 60%;
+        }
+        .wrapper .container .part.card-details h1 {
+          background-color: #00b0ff;
+          color: white;
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 14px 0 10px 49px;
+          letter-spacing: 1px;
+          margin-left: -52px;
+          width: 330px;
+        }
+        .wrapper .container .part.bg {
+          width: 40%;
+          background-image: url("https://s13.postimg.org/d8emjhccn/image.jpg");
+          background-size: 121%;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          -moz-border-radius-topright: 10px;
+          -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
+          -moz-border-radius-bottomright: 10px;
+          -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        .wrapper .container form {
+          font-family: "Work Sans", sans-serif;
+        }
+        .wrapper .container form .group {
+          display: block;
+          width: 100%;
+          float: left;
+          position: relative;
+          margin-bottom: 25px;
+        }
+        .wrapper .container form .group label {
+          font-size: 12px;
+          float: left;
+          width: 100%;
+          display: block;
+          margin-bottom: 5px;
+        }
+        .wrapper .container form .group input {
+          float: left;
+          width: 100%;
+          height: 30px;
+          font-size: 18px;
+          font-family: "Work Sans", sans-serif;
+          border: 0;
+          color: #263238;
+          border-bottom: 1px solid #d9d9d9;
+        }
+        .wrapper .container form .group input::-webkit-input-placeholder {
+          font-family: "Work Sans", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          vertical-align: middle;
+          color: #d9d9d9;
+          text-align: left;
+        }
+        .wrapper .container form .group input:-moz-placeholder {
+          font-family: "Work Sans", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          vertical-align: middle;
+          color: #d9d9d9;
+          text-align: left;
+        }
+        .wrapper .container form .group input::-moz-placeholder {
+          font-family: "Work Sans", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          vertical-align: middle;
+          color: #d9d9d9;
+          text-align: left;
+        }
+        .wrapper .container form .group input:-ms-input-placeholder {
+          font-family: "Work Sans", sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          vertical-align: middle;
+          color: #d9d9d9;
+          text-align: left;
+        }
+        .wrapper .container form .group input:focus {
+          outline: none;
+          border-bottom-color: #00b0ff;
+        }
+        .wrapper .container form .group input:focus::-webkit-input-placeholder {
+          color: transparent;
+        }
+        .wrapper .container form .group input:focus:-moz-placeholder {
+          color: transparent;
+        }
+        .wrapper .container form .group input:focus::-moz-placeholder {
+          color: transparent;
+        }
+        .wrapper .container form .group input:focus:-ms-input-placeholder {
+          color: transparent;
+        }
+        .wrapper .container form .card-number {
+          border-bottom: 1px solid #d9d9d9;
+        }
+        .wrapper .container form .card-number:first-of-type {
+          margin-top: 32px;
+        }
+        .wrapper .container form .card-number input {
+          width: 43px;
+          border-bottom: 0;
+        }
+        .wrapper .container form .card-number.focused {
+          border-bottom-color: #00b0ff;
+        }
+        .wrapper .container form .card-expiry {
+          border-bottom: 0;
+        }
+        .wrapper .container form .card-expiry .input-item {
+          float: left;
+        }
+        .wrapper .container form .card-expiry .input-item.expiry {
+          width: 200px;
+        }
+        .wrapper
+          .container
+          form
+          .card-expiry
+          .input-item.expiry
+          input:last-of-type {
+          margin-left: 30px;
+        }
+        .wrapper .container form .card-expiry .input-item.csv {
+          width: 80px;
+          position: relative;
+        }
+        .wrapper .container form .card-expiry .input-item.csv a {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 12px;
+          text-decoration: none;
+          color: #00b0ff;
+        }
+        .wrapper .container form .card-expiry .input-item.csv a:hover {
+          color: #263238;
+        }
+        .wrapper .container form .card-expiry .input-item label {
+          width: 100%;
+        }
+        .wrapper .container form .card-expiry .input-item input {
+          border-bottom: 1px solid #d9d9d9;
+          padding-bottom: 8px;
+        }
+        .wrapper .container form .card-expiry .input-item input.month {
+          width: 60px;
+        }
+        .wrapper .container form .card-expiry .input-item input.year {
+          width: 79px;
+        }
+        .wrapper .container form .card-expiry .input-item input.csv {
+          width: 79px;
+        }
+        .wrapper .container form .card-expiry .input-item input:focus {
+          border-bottom: 1px solid #00b0ff;
+        }
+        .wrapper .container form .submit-group {
+          width: 100%;
+          float: left;
+          position: relative;
+        }
+        .wrapper .container form .submit {
+          text-transform: uppercase;
+          position: relative;
+          border: none;
+          background-color: transparent;
+          font-size: 12px;
+          line-height: 21px;
+          letter-spacing: 1.4px;
+          text-align: left;
+          color: #263238;
+          margin-left: 24px;
+          cursor: pointer;
+        }
+        .wrapper .container form .submit:hover {
+          text-decoration: underline;
+        }
+        .wrapper .container form .submit:focus {
+          outline: none;
+        }
+        .wrapper .container form .arrow {
+          position: absolute;
+          top: -2px;
+          left: -1px;
+        }
+        .wrapper .container form .arrow:before {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-image: url("https://s21.postimg.org/lgxvam5df/arrow.png");
+          position: absolute;
+          top: 4px;
+          left: 0;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+        }
+        .wrapper .container form .arrow.rotate:before {
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+
+        .credits {
+          display: block;
+          font-family: "Work Sans", sans-serif;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          color: #263238;
+          font-size: 12px;
+          margin: 0 10px 10px 0;
+        }
+        .credits a {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+          opacity: 0.8;
+          color: inherit;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      </style>
+      <script>
+        $(".cc-num").keyup(function () {
+          if (this.value.length == this.maxLength) {
+            var $next = $(this).next(".cc-num");
+            if ($next.length) $(this).next(".cc-num").focus();
+            else $(this).blur();
+          }
+        });
+        $(".cc-num").on("focusin", function () {
+          $(".cc-num").attr("type", "password");
+          $(this).attr("type", "text");
+          $(".card-number").addClass("focused");
+        });
+        $(".cc-num").on("focusout", function () {
+          $(".card-number").removeClass("focused");
+        });
+        $(".dropdown").click(function () {
+          $(this).next("ul").stop().slideToggle();
+          $(this).toggleClass("selected");
+        });
+        $(".card-number").on("keydown", ".cc-num", function (e) {
+          -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) ||
+            (/65|67|86|88/.test(e.keyCode) &&
+              (!0 === e.ctrlKey || !0 === e.metaKey)) ||
+            (35 <= e.keyCode && 40 >= e.keyCode) ||
+            ((e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) &&
+              (96 > e.keyCode || 105 < e.keyCode) &&
+              e.preventDefault());
+        });
+        $(".submit").hover(
+          function () {
+            $(".arrow").addClass("rotate");
+          },
+          function () {
+            $(".arrow").removeClass("rotate");
+          }
+        );
+        $(".part.bg").mousemove(function (e) {
+          var amountMovedX = (e.pageX * -1) / 30;
+          var amountMovedY = (e.pageY * -1) / 9;
+          $(this).css(
+            "background-position",
+            amountMovedX + "px " + amountMovedY + "px"
+          );
+        });
+      </script>
+      <!------ Include the above in your HEAD tag ---------->
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      />
+      <div class="pd-wrap">
+        <div class="wrapper">
+          <div class="container">
+            <article class="part card-details">
+              <h1>Credit Card Details</h1>
+              <form action="index.html" if="cc-form" autocomplete="off">
+                <div class="group card-number">
+                  <label for="first">Card Number</label>
+                  <input
+                    type="text"
+                    id="first"
+                    class="cc-num"
+                    type="text"
+                    maxlength="4"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;"
+                  />
+                  <input
+                    type="text"
+                    id="second"
+                    class="cc-num"
+                    type="text"
+                    maxlength="4"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;"
+                  />
+                  <input
+                    type="text"
+                    id="third"
+                    class="cc-num"
+                    type="text"
+                    maxlength="4"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;"
+                  />
+                  <input
+                    type="text"
+                    id="fourth"
+                    class="cc-num"
+                    type="text"
+                    maxlength="4"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;"
+                  />
+                </div>
+                <div class="group card-name">
+                  <label for="name">Name On Card</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class=""
+                    type="text"
+                    maxlength="20"
+                    placeholder="Name Surname"
+                  />
+                </div>
+                <div class="group card-expiry">
+                  <div class="input-item expiry">
+                    <label for="expiry">Expiry Date</label>
+                    <input
+                      type="text"
+                      class="month"
+                      id="expiry"
+                      placeholder="02"
+                    />
+                    <input type="text" class="year" id="" placeholder="2017" />
+                  </div>
+                  <div class="input-item csv">
+                    <label for="csv">CSV No.</label><a href="#what">?</a>
+                    <input type="text" class="csv" />
+                  </div>
+                </div>
+                <div class="grup submit-group">
+                  <span class="arrow"></span>
+                  <input
+                    type="submit"
+                    class="submit"
+                    value="Continue to payment"
+                  />
+                </div>
+              </form>
+            </article>
+            <div class="part bg"></div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+
+    <section class="probootstrap-half reverse">
+      <div class="image-wrap">
+        <div
+          class="image"
+          style="background-image: url(img/slider_5.jpg)"
+        ></div>
+      </div>
+      <div class="text">
+        <p class="mb10 subtitle">Why Choose Us</p>
+        <h3 class="mt0 mb40">You Will Love Our Services</h3>
+        <p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean.
+        </p>
+        <p class="mb50">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
+        <p><a href="#" class="btn btn-primary mb10">Find out more</a></p>
+      </div>
+    </section>
+
+    <footer
+      class="probootstrap-footer probootstrap-bg"
+      style="background-image: url(img/slider_3.jpg)"
+    >
+      <div class="container">
+        <div class="row mb60">
+          <div class="col-md-3">
+            <div class="probootstrap-footer-widget">
+              <h4 class="heading">About Haus.</h4>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+              <p><a href="#">Read more...</a></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="probootstrap-footer-widget probootstrap-link-wrap">
+              <h4 class="heading">Quick Links</h4>
+              <ul class="stack-link">
+                <li><a href="#">Property Listing</a></li>
+                <li><a href="#">Rent Properties</a></li>
+                <li><a href="#">Sell Properties</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Testimonial</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="probootstrap-footer-widget">
+              <h4 class="heading">Popular Cities</h4>
+              <ul class="stack-link">
+                <li>
+                  <a href="#">New York <small>(320 properties)</small></a>
+                </li>
+                <li>
+                  <a href="#">San Francisco <small>(294 properties)</small></a>
+                </li>
+                <li>
+                  <a href="#">Brooklyn <small>(300 properties)</small></a>
+                </li>
+                <li>
+                  <a href="#">Chicago <small>(268 properties)</small></a>
+                </li>
+                <li>
+                  <a href="#">Los Angeles <small>(342 properties)</small></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="probootstrap-footer-widget probootstrap-link-wrap">
+              <h4 class="heading">Subscribe</h4>
+              <p>Far far away behind the word mountains far from.</p>
+              <form action="#">
+                <div class="form-field">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                  <button class="btn btn-subscribe">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-md-6">
+            <div class="probootstrap-footer-widget">
+              <p>
+                &copy; 2017 <a href="https://uicookies.com/">uiCookies:Haus</a>.
+                Designed by <a href="https://uicookies.com/">uicookies.com</a>
+                <br />
+                Demo Photos from
+                <a href="https://pixabay.com/">Pixabay</a> &amp;
+                <a href="https://unsplash.com/">Unsplash</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="probootstrap-footer-widget right">
+              <ul class="probootstrap-footer-social">
+                <li>
+                  <a href="#"><i class="icon-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-instagram2"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
+    </div>
+    <script>
+      (function ($) {
+        function floatLabel(inputType) {
+          $(inputType).each(function () {
+            var $this = $(this);
+            // on focus add cladd active to label
+            $this.focus(function () {
+              $this.next().addClass("active");
+            });
+            //on blur check field and remove class if needed
+            $this.blur(function () {
+              if ($this.val() === "" || $this.val() === "blank") {
+                $this.next().removeClass();
+              }
+            });
+          });
+        }
+        // just add a class of "floatLabel to the input field!"
+        floatLabel(".floatLabel");
+      })(jQuery);
+    </script>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
